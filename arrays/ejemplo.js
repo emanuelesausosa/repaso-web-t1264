@@ -57,9 +57,10 @@ while (contador < myArray2.length) {
 function recorrer(indice) {
   if (indice > myArray2.length) return;
   console.log(myArray2[indice]);
-  recorrer(indice++);
+  indice += 1; // corregido
+  recorrer(indice);
 }
 
-recorrer(myArray[0]);
+recorrer(0);
 
 // insercion en caliente
